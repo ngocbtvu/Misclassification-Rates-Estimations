@@ -1,19 +1,7 @@
-% --------------------------------------------------------------------------- %
-% Poster for the ECCS 2011 Conference about Elementary Dynamic Networks.      %
-% --------------------------------------------------------------------------- %
-% Created with Brian Amberg's LaTeX Poster Template. Please refer for the     %
-% attached README.md file for the details how to compile with `pdflatex`.     %
-% --------------------------------------------------------------------------- %
-% $LastChangedDate:: 2011-09-11 10:57:12 +0200 (V, 11 szept. 2011)          $ %
-% $LastChangedRevision:: 128                                                $ %
-% $LastChangedBy:: rlegendi                                                 $ %
-% $Id:: poster.tex 128 2011-09-11 08:57:12Z rlegendi                        $ %
-% --------------------------------------------------------------------------- %
 \documentclass[a0paper,landscape]{baposter}
 
-\usepackage{relsize}		% For \smaller
-\usepackage{url}			% For \url
-% \usepackage{epstopdf}	% Included EPS files automatically converted to PDF to include with pdflatex
+\usepackage{relsize}		
+\usepackage{url}			
 \usepackage{blindtext}
 \usepackage{geometry}
  \geometry{
@@ -22,7 +10,7 @@
  right=7mm
  }
 
-%% Define path for figures -- for safety, keep the last /
+%% Define path for figures
 \graphicspath{{/your/figure/directory/here/if/any/}
 {/an/second/directory/path/can/go/here/}}
 \usepackage{pstricks}
@@ -37,7 +25,6 @@
 %%% Global Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \graphicspath{{pix/}}	% Root directory of the pictures 
-% \tracingstats=2			% Enabled LaTeX logging with conditionals
 \usepackage{tikz}
 %%% Color Definitions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -50,7 +37,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Utility functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%% Save space in lists. Use this after the opening of the list %%%%%%%%%%%%%%%%
 \newcommand{\compresslist}{
 	\setlength{\itemsep}{1pt}
 	\setlength{\parskip}{0pt}
@@ -60,7 +46,6 @@
 
 \usepackage{lipsum}
 \usepackage{multicol}
-%\setlength{\columnseprule}{0.4pt}
 \setlength{\tabcolsep}{30pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Document Start %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -84,18 +69,13 @@
 }
 \makeatother
 %%% General Poster Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% Eye Catcher, Title, Authors and University Images %%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Title, Authors and University Images %%%%%%%%%%%%%%%%%%%%%%
 \begin{poster}{
 	grid=false,
-	% Option is left on true though the eyecatcher is not used. The reason is
-	% that we have a bit nicer looking title and author formatting in the headercol
-	% this way
-	%eyecatcher=false, 
 	borderColor=bordercol,
 	headerColorOne=headercol1,
 	headerColorTwo=headercol2,
 	headerFontColor=headerfontcol,
-	% Only simple background color used, no shading, so boxColorTwo isn't necessary
 	boxColorOne=boxcolor,
 	headershape=rectangle,
 	headerfont=\Large\sf\bf\Centering,
@@ -104,13 +84,7 @@
 	headerborder=open,
     boxshade=plain
 }
-%%% Eye Cacther %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% {
-% 	Eye Catcher, empty if option eyecatcher=false - unused
-% }
-{
-% The logos are compressed a bit into a simple box to make them smaller on the result
-% (Wasn't able to find any bigger of them.)
+
 \setlength\fboxsep{0pt}
 \setlength\fboxrule{0pt}
 	\fbox{
@@ -130,8 +104,6 @@
 }
 %%% Logo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {
-% The logos are compressed a bit into a simple box to make them smaller on the result
-% (Wasn't able to find any bigger of them.)
 \setlength\fboxsep{0pt}
 \setlength\fboxrule{0pt}
 	\fbox{
